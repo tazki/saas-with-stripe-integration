@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
 
         Feature::create([
             'image' => 'https://cdn3.iconfinder.com/data/icons/iconic-1/32/plus_alt-512.png',
-            'route_name' => 'feaute1.index',
+            'route_name' => 'feature1.index',
             'name' => 'Calculate Sum',
             'description' => 'Calculate sum of two numbers',
             'required_credits' => 1,
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
 
         Feature::create([
             'image' => 'https://cdn-icons-png.flaticon.com/512/2569/2569198.png',
-            'route_name' => 'feaute2.index',
+            'route_name' => 'feature2.index',
             'name' => 'Calculate Difference',
             'description' => 'Calculate difference of two numbers',
             'required_credits' => 3,
