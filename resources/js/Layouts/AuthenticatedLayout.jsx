@@ -43,7 +43,17 @@ export default function Authenticated({ user, header, children }) {
                             </div>
                         </div>
 
-                        <div className="hidden sm:flex sm:items-center sm:ms-6">
+                        <div className="hidden sm:flex sm:items-center sm:ms-6 gap-3">
+                            <span className="text-white flex gap-3">
+                                <img src="/img/coin.png" className="w-[20px]" />
+                                {user.available_credits} Credits
+                            </span>
+                            <Link
+                                href={route("credit.index")}
+                                className="text-white py-1 px-3 rounded border transition-colors hover:text-grray-800 hover:bg-white dark:hover:bg-gray-800"
+                            >
+                                Get More
+                            </Link>
                             <div className="ms-3 relative">
                                 <Dropdown>
                                     <Dropdown.Trigger>
